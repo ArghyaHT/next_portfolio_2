@@ -3,23 +3,30 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/dev_img2.png";
+import profilePic from "../../public/images/profile/story_image1.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
+import { FiChevronRight } from "react-icons/fi"
+import Testimonial from "@/components/Testimonials";
+import Instagram from "@/components/Instagram";
+import Ingredients from "@/components/ingredients";
+import ProductEffective from "@/components/ProductEffective";
 
 
-const AnimatedNumbers = ({value}) => {
+
+
+const AnimatedNumbers = ({ value }) => {
 
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, {duration: 3000})
-  const isInView = useInView(ref, {once: true});
+  const springValue = useSpring(motionValue, { duration: 3000 })
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
-    if(isInView){
+    if (isInView) {
       motionValue.set(value);
     }
 
@@ -27,13 +34,13 @@ const AnimatedNumbers = ({value}) => {
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-     if(ref.current && latest.toFixed(0) <= value ){
-      ref.current.textContent = latest.toFixed(0);
-     }
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
     })
   }, [springValue, value])
-  
-  
+
+
 
   return <span ref={ref}></span>
 }
@@ -41,13 +48,13 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>About Page</title>
+        <title>Our Story</title>
         <meta name="description" content="any description" />
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Passion Fuels Purpose!" className="mb-16 lg:!text-7xl sm:!text-6xl xs:text-4xl
+          <AnimatedText text="Our Story!" className="mb-16 lg:!text-6xl sm:!text-6xl xs:text-4xl
           sm:mb-8" />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
@@ -86,7 +93,7 @@ const about = () => {
                 alt="CB"
                 className="w-full h-auto rounded-2xl"
                 priority
-              sizes="(max-width: 768px) 100vw,
+                sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
               ></Image>
@@ -102,9 +109,9 @@ const about = () => {
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"><AnimatedNumbers value={40}/>+</span>
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"><AnimatedNumbers value={40} />+</span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base
-                xs:text-sm">Projects Completed</h2>
+                xs:text-sm">Product Sold</h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
@@ -115,10 +122,16 @@ const about = () => {
             </div>
           </div>
 
-          <Skills />
-          <Experience />
-          <Education />
+        <Experience />
+        <Education />
+
+
+          
         </Layout>
+    
+       
+
+
       </main>
     </>
   );
