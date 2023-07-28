@@ -39,7 +39,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full lg:flex-col">
 
             <div className="w-1/2 md:w-full">
-              <Image src={profilePic} alt="CB" className="w-full h-auto lg:hidden md:inline-block md:w-full"
+              <Image src={profilePic} alt="CB" className="w-full h-auto lg:hidden md:inline-block md:w-full dark:text-light"
                 priority
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
@@ -49,7 +49,7 @@ export default function Home() {
             ">
               <AnimatedText
                 text="We treat Your Pets Right"
-                className="!text-6xl !text-left 
+                className="!text-5xl !text-left 
                 xl:!text-5xl lg:!text-center lg:!text-6xl md:text-xl sm:text-l "
               />
 
@@ -69,7 +69,7 @@ export default function Home() {
               (max-width: 1200px) 50vw,
               50vw" />
 
-                <Image src={hero1} alt="CP" className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                <Image src={hero1} alt="CP" className="w-full h-auto translate-x-lg:hidden md:inline-block md:w-full"
                   priority
                   sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,

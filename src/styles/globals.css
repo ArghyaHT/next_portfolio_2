@@ -4,3 +4,48 @@
 
 
 
+.contact-box{
+    border: 1px solid black;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-box{
+        width: 100%;
+    }
+}
+
+.contact-box h1{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-box div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-box div label{
+    font-weight: 500;
+}
+.contact-box div input{
+    height: 40px;
+    border-radius: 4px;
+    padding-inline: 10px;
+}
+
+.contact-box button{
+    background-color: black;
+    height: 40px;
+    color: white;
+    border-radius: 4px;
+}
+.message{
+    padding: 10px;
+}

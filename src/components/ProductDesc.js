@@ -26,7 +26,7 @@ const Details = ({ type, time, place, info }) => {
     </li>
   );
 };
-const Education = () => {
+const ProductDesc = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -34,7 +34,7 @@ const Education = () => {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">Education</h2>
+      <h2 className="font-bold text-5xl mb-32 w-full text-center md:text-4xl xs:text-3xl md:mb-16">Our Product Effectiveness</h2>
 
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
@@ -67,10 +67,18 @@ const Education = () => {
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
           />
+
+          <Details
+            type="Bachelor Of Science In Computer Science"
+            time="2016-2020"
+            place="Massachusetts Institute Of Technology (MIT)"
+            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
+            Intelligence."
+          />
         </ul>
       </div>
     </div>
   );
 };
 
-export default Education;
+export default ProductDesc;

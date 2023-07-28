@@ -7,13 +7,11 @@ import profilePic from "../../public/images/profile/story_image1.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import Education from "@/components/Education";
+import Education from "@/components/ProductDesc";
 import TransitionEffect from "@/components/TransitionEffect";
-import { FiChevronRight } from "react-icons/fi"
-import Testimonial from "@/components/Testimonials";
-import Instagram from "@/components/Instagram";
-import Ingredients from "@/components/ingredients";
-import ProductEffective from "@/components/ProductEffective";
+import ProductDesc from "@/components/ProductDesc";
+
+
 
 
 
@@ -122,8 +120,8 @@ const about = () => {
             </div>
           </div>
 
-        <Experience />
-        <Education />
+        {/* <Experience /> */}
+        <ProductDesc />
 
 
           

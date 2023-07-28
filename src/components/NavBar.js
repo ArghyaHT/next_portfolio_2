@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import  { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, SunIcon, MoonIcon } from "./Icons";
+import  Facebook, { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, SunIcon, MoonIcon } from "./Icons";
 import {motion} from "framer-motion"
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
@@ -61,7 +61,7 @@ const handleClick = () => {
     
       <button className="flex-col justify-center items-center hidden lg:flex"
       onClick={handleClick}>
-        <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+        <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-3' : '-translate-y-0.5'}`}></span>
         <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
         <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 translate-y-1' : 'translate-y-0.5'}`}></span>
       </button>
@@ -79,7 +79,7 @@ const handleClick = () => {
         whileHover={{y:-2}}
         whileTap={{scale: 0.9}}
         className="w-6 mr-6">
-        <TwitterIcon />
+        <Facebook />
         </motion.a>
         <motion.a href="http://twitter.com" target={"_blank"}  className="w-6 mx-6"
         whileHover={{y:-2}}
@@ -97,11 +97,11 @@ const handleClick = () => {
         whileTap={{scale: 0.9}}>
           <PinterestIcon />
         </motion.a>
-        <motion.a href="http://twitter.com" target={"_blank"}  className="w-6 ml-6"
+        {/* <motion.a href="http://twitter.com" target={"_blank"}  className="w-6 ml-6"
         whileHover={{y:-2}}
         whileTap={{scale: 0.9}}>
            <DribbbleIcon />
-        </motion.a>
+        </motion.a> */}
 
         <button
         onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -154,11 +154,11 @@ const handleClick = () => {
         whileTap={{scale: 0.9}}>
           <PinterestIcon />
         </motion.a>
-        <motion.a href="http://twitter.com" target={"_blank"}  className="w-6 ml-6 sm:mx-1"
+        {/* <motion.a href="http://twitter.com" target={"_blank"}  className="w-6 ml-6 sm:mx-1"
         whileHover={{y:-2}}
         whileTap={{scale: 0.9}}>
            <DribbbleIcon />
-        </motion.a>
+        </motion.a> */}
 
         <button
         onClick={() => setMode(mode === "light" ? "dark" : "light")}
