@@ -130,7 +130,7 @@ const projects = () => {
                   "- 90gm (Pack of 1)"
                 ]}
                 summary="Get it by Sunday, 6th August"
-                link= "/"
+                link= "https://www.amazon.in/Cherrypops-Chicken-Jerky-Natural-Handmade/dp/B0BTW11VD5"
                 github="/"
                 type="Featured Product"
                 
@@ -178,7 +178,7 @@ const projects = () => {
                   "- 90gm (Pack of 1)"
                 ]}
                 summary="Get it by Sunday, 6th August"
-                link= "/"
+                link= "https://www.amazon.in/Cherrypops-Fish-Bites-Natural-Handmade/dp/B0BTYSV8CY/ref=sr_1_2?m=AFBKORBP6AVHV&marketplaceID=A21TJRUUN4KGV&qid=1691661801&s=merchant-items&sr=1-2"
                 github="/"
                 type="Featured Product"
                 
