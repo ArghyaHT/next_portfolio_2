@@ -19,6 +19,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 import ProductEffective from "@/components/ProductEffective";
 import Ingreadients from "@/components/ingredients"
 import Instagram from "@/components/Instagram"
+import Testimonials from "@/components/Testimonials";
 
 // import Line from "../../public/images/assets/line.png"
 
@@ -63,13 +64,13 @@ export default function Home() {
 
               <div className="flex items-center self-end mt-2 lg:self-center md:mt-8 ">
 
-              <Image src={hero2} alt="CP" className="w-full h-auto lg:hidden md:inline-block md:w-full"
+              <Image src={hero2} alt="CP" className="w-full h-auto z-10 lg:hidden md:inline-block md:w-full"
                   priority
                   sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               50vw" />
 
-                <Image src={hero1} alt="CP" className="w-full h-auto translate-x-lg:hidden md:inline-block md:w-full"
+                <Image src={hero1} alt="CP" className="w-full h-auto translate-x-[-60px] md:translate-x-0 lg:hidden md:inline-block md:w-full"
                   priority
                   sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
@@ -101,6 +102,7 @@ export default function Home() {
           </div>
           <ProductEffective />
           <Ingreadients />
+          {/* <Testimonials /> */}
           <Instagram />
         </Layout>
 

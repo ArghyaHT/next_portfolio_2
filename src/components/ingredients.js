@@ -9,7 +9,7 @@ import Ingredients5 from '../../public/images/assets/ingreadients5.png'
 
 const ingredients = () => {
   return (
-    <div className='my-32'>
+    <div className='mt-12'>
     <h2 className="font-bold text-5xl mb-16 w-full text-center md:text-4xl xs:text-3xl md:mb-16">
         Organic Ingredients
     </h2>

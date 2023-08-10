@@ -57,16 +57,14 @@ const about = () => {
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
-                Biography
+                About Us
               </h2>
               <p className="font-medium">
-                Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+              At Cherrypops. we have a passion for our beloved better halves and believe they deserve the best.  
+              Our mission is to provide the most deligfghtful, nutritious and all natural dog treats that will keep tails wagging and  ensures all glee. 
+              We carefully handcraft each treat using only the finest meats and turmeric for a healthy gut ensuring every bite is full of love and goodness.
               </p>
-              <p className="my-4 font-medium">
+              {/* <p className="my-4 font-medium">
                 I believe that design is about more than just making things look
                 pretty – it&apos;s about solving problems and creating intuitive,
                 enjoyable experiences for users.
@@ -77,7 +75,7 @@ const about = () => {
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to
                 your next project.
-              </p>
+              </p> */}
             </div>
 
             <div

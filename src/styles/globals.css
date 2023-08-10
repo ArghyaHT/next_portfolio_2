@@ -17,6 +17,7 @@
 @media screen and (max-width: 767px) {
     .contact-box{
         width: 100%;
+        margin-top: 3rem;
     }
 }
 

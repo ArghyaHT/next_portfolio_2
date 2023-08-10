@@ -17,9 +17,9 @@ const Details = ({ type, time, place, info }) => {
         transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+        {/* <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {place}
-        </span>
+        </span> */}
 
         <p className="font-medium w-full md:text-sm">{info}</p>
       </motion.div>
@@ -33,8 +33,8 @@ const ProductDesc = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
-      <h2 className="font-bold text-5xl mb-32 w-full text-center md:text-4xl xs:text-3xl md:mb-16">Our Product Effectiveness</h2>
+    <div className="my-40">
+      <h2 className="font-bold text-5xl mb-32 w-full text-center md:text-4xl xs:text-3xl md:mb-16">Why Choose Us</h2>
 
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
@@ -45,36 +45,35 @@ const ProductDesc = () => {
 
         <ul className="w-full flex flex-col items-start justifyp-between  ml-4 xs:ml-4 ">
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Natural Ingredients"
+            info="We use high quality sourced ingredients without any artificial additives, colors or preservatives."
           />
 
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Vet Approved"
+            info="Our treats are veterinarian approved, ensuring they are safe and beneficial for your furry friend's health."
           />
 
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Tail-Wagging taste"
+            info="Our recipes are designed to be irresistibly tasty, making your pet's day a little brighter with every bite."
           />
 
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Made with Love"
+            info="Each treat is made with love and dedication in small batches, just like we would treat our own beloved better halves."
           />
+
+          <Details
+            type="Safety and Quality"
+            info="We follow strict quality and baking standards to guarantee that our treats meet the highest safety and hygiene requirements."
+          />
+
+          <Details
+            type="Happy babies, happy parents"
+            info="Our treats have earned the seal of approval from coutless happy furbabies and their owners."
+          />
+
         </ul>
       </div>
     </div>

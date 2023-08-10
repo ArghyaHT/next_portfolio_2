@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
-import profilePic1 from "../../public/images/profile/HeroImg.png";
+import ContactUs from "../../public/images/assets/contactUs.png"
 // import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
 // import article2 from "../../public/images/articles/create loading screen in react js.jpg";
 // import article3 from "../../public/images/articles/create modal component in react using react portals.png";
@@ -186,11 +186,12 @@ const articles = () => {
           <div className="flex items-center justify-between w-full lg:flex-col">
 
 <div className="w-1/2 md:w-full">
-  <Image src={profilePic1} alt="CB" className="w-full h-auto lg:hidden md:inline-block md:w-full dark:text-light"
+  <Image src={ContactUs} alt="CB" className="w-full h-auto lg:hidden md:inline-block mt-[-10rem] md:mt-0 md:w-full dark:text-light"
     priority
     sizes="(max-width: 768px) 100vw,
   (max-width: 1200px) 50vw,
-  50vw" />
+  50vw" 
+  />
 </div>
           <div className="contact-box">
             <h1>Contact</h1>

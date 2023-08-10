@@ -14,42 +14,42 @@ const ProductEffective = () => {
                             <div className="w-16 h-14">
                                 <Image className="w-2/3 h-2/3  md:w-2/3 md:h-2/3 rounded-full dark:bg-light" src={Check} alt="check" />
                             </div>
-                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Lorem ipsum dolor sit amet, consectetuer.</p>
+                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Natural Ingredients</p>
                         </div>
 
                         <div className="flex items-center gap-8">
                             <div className="w-16 h-14">
                                 <Image className="w-2/3 h-2/3   md:w-2/3 md:h-2/3 rounded-full dark:bg-light" src={Check} alt="check" />
                             </div>
-                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Lorem ipsum dolor sit amet, consectetuer.</p>
+                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Vet Approved</p>
                         </div>
 
                         <div className="flex items-center gap-8">
                             <div className="w-16 h-14">
                                 <Image className="w-2/3 h-2/3   md:w-2/3 md:h-2/3 rounded-full dark:bg-light" src={Check} alt="check" />
                             </div>
-                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Lorem ipsum dolor sit amet, consectetuer.</p>
+                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Tail-Wagging Taste</p>
                         </div>
 
                         <div className="flex items-center gap-8">
                             <div className="w-16 h-14">
                                 <Image className="w-2/3 h-2/3  md:w-2/3 md:h-2/3 rounded-full dark:bg-light" src={Check} alt="check" />
                             </div>
-                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Lorem ipsum dolor sit amet, consectetuer.</p>
+                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Made With Love</p>
                         </div>
 
                         <div className="flex items-center gap-8">
                             <div className="w-16 h-14">
                                 <Image className="w-2/3 h-2/3   md:w-2/3 md:h-2/3 rounded-full dark:bg-light" src={Check} alt="check" />
                             </div>
-                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Lorem ipsum dolor sit amet, consectetuer.</p>
+                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Safety And Quality</p>
                         </div>
 
                         <div className="flex items-center gap-8">
                             <div className="w-16 h-14">
                                 <Image className="w-2/3 h-2/3  md:w-2/3 md:h-2/3 rounded-full dark:bg-light" src={Check} alt="check" />
                             </div>
-                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Lorem ipsum dolor sit amet, consectetuer.</p>
+                            <p className="text-lg font-semibold translate-y-[-10px] md:text-base">Happy Babies, Happy Parents</p>
                         </div>
                         </div>
 
